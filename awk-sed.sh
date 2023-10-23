@@ -1,0 +1,8 @@
+touch "input.txt"
+echo "This is some new content to add....nikhil.." >> "input.txt"
+echo "grep is in process.."
+grep "nikhil" "input.txt"
+echo "sed is in process to replace nikhil"
+sed -i 's/nikhil/new_nikhil/g' "input.txt"
+echo "awak is in proces to print word which is at 3 place and 4th place"
+awk '{print $3, $4}' "input.txt"
